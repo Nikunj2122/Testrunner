@@ -1,0 +1,41 @@
+name: CI
+
+
+on:
+ 
+  push:
+    branches: [ main ]
+  
+
+  
+
+
+jobs:
+  
+  build:
+    
+    runs-on: self-hosted
+
+   
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      
+      - name: Creating HOME/src
+        run: |
+          mkdir HOME && ls -l
+          pwd
+          cd HOME && mkdir src && ls -l
+          cd /home/runner/work/TestCICDrunner/TestCICDrunner/HOME && ls -l
+          
+          
+      - name: Copy data to Absulate path    
+        run: |
+           cp -r /home/runner/work/TestCICDrunner/TestCICDrunner/README.md HOME/src
+           cd /home/runner/work/TestCICDrunner/TestCICDrunner/HOME/src 
+           ls -l
