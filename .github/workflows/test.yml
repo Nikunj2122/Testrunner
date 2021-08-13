@@ -25,14 +25,9 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      
-      - name: Creating HOME/src
+      - name: Current pwd
         run: |
-          mkdir HOME && ls -l
-          pwd
-          cd HOME && mkdir src && ls -l && pwd
-          cd /home/runner/work/TestCICDrunner/TestCICDrunner/HOME && ls -l
-          
+           pwd & ls -l
           
       - name: Copy data to Absulate path    
         run: |
