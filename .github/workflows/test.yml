@@ -30,7 +30,7 @@ jobs:
         run: |
           mkdir HOME && ls -l
           pwd
-          cd HOME && mkdir src && ls -l
+          cd HOME && mkdir src && ls -l && pwd
           cd /home/runner/work/TestCICDrunner/TestCICDrunner/HOME && ls -l
           
           
