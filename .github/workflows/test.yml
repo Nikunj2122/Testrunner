@@ -4,7 +4,7 @@ name: CI
 on:
  
   push:
-    branches: [ main ]
+    branches: [ mainxyxx ]
   
 
   
@@ -23,7 +23,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: echo Hello!
 
       - name: Current pwd
         run: |
@@ -31,6 +31,6 @@ jobs:
           
       - name: Copy data to Absulate path    
         run: |
-           cp -r /home/runner/work/TestCICDrunner/TestCICDrunner/README.md HOME/src
-           cd /home/runner/work/TestCICDrunner/TestCICDrunner/HOME/src 
-           ls -l
+           cp -r README.md HOME/src
+           pwd
+           ls -lrt
