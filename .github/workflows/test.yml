@@ -31,6 +31,6 @@ jobs:
           
       - name: Copy data to Absulate path    
         run: |
-           cp -r README.md HOME/src
+           cp -r /Testrunner/Testrunner/README.md HOME/src
            pwd
            ls -lrt
