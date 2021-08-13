@@ -32,14 +32,14 @@ jobs:
       - name: Current pwd
         run: |
            pwd & ls -l
-           export PATH=$PATH:/usr/bin/
+           export PATH="usr/bin:$PATH"
 #           echo "$usr/bin" >> $GITHUB_VARIABLE
 #           echo "$GITHUB_VARIABLE"
           
       - name: Copy data to Absulate path    
         run: |
            cd /usr/bin/   
-           cp -r echo "$PATH"/HOME/src/Testrunner/Testrunner/README.md echo"$PATH"/HOME/src
+           cp -r echo "$PATH"/HOME/src/Testrunner/Testrunner/README.md echo "$PATH"/HOME/src
            pwd
            ls -lrt
 #           cp -r ./HOME/src/Testrunner/Testrunner/README.md ./HOME/src
