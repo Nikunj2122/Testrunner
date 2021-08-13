@@ -39,7 +39,7 @@ jobs:
       - name: Copy data to Absulate path    
         run: |
            cd /usr/bin/   
-           cp -r echo "$PATH"/HOME/src/Testrunner/Testrunner/README.md echo "$PATH"/HOME/src
+           cp -r $PATH/HOME/src/Testrunner/Testrunner/README.md $PATH/HOME/src
            pwd
            ls -lrt
 #           cp -r ./HOME/src/Testrunner/Testrunner/README.md ./HOME/src
