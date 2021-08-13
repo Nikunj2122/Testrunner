@@ -13,6 +13,8 @@ on:
 jobs:
   
   build:
+  
+  
     
     runs-on: self-hosted
 
@@ -30,11 +32,12 @@ jobs:
       - name: Current pwd
         run: |
            pwd & ls -l
-           echo "$usr/bin" >> $GITHUB_PATH
-           echo "$GITHUB_PATH"
+#           echo "$usr/bin" >> $GITHUB_VARIABLE
+#           echo "$GITHUB_VARIABLE"
           
       - name: Copy data to Absulate path    
         run: |
-           cp -r /usr/bin/HOME/src/Testrunner/Testrunner/README.md "$GITHUB_PATH"/HOME/src
+           cd /usr/bin/ 
+           cp -r /HOME/src/Testrunner/Testrunner/README.md /HOME/src
            pwd
            ls -lrt
