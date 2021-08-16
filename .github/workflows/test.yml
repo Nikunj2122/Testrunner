@@ -32,7 +32,7 @@ jobs:
       - name: Current pwd
         run: |
            pwd & ls -l
-           export PATH="usr/bin:$PATH"
+           export PATH="/usr/bin:$PATH"
 #           echo "$usr/bin" >> $GITHUB_VARIABLE
 #           echo "$GITHUB_VARIABLE"
           
